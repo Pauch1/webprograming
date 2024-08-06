@@ -11,8 +11,9 @@ class Announce():
     
     def cheaker(self):
        return self.capacity - len(self.passenger)
+   
     
-f = Announce(3)
+f = Announce(20)
 
 names = ['john', 'sandra', 'kyle', 'lax', 'jewel']
 

@@ -1,19 +1,17 @@
-def factorial(x):
-    if x == 1:
-        return 1
-    else:
-       return x * factorial(x-1)
+
        
 
 
 
-def build(x):
+def build(x, y = 1):
     if x == 0:
-        return False
+        return
     else:
-        for i in range(x):
+        for i in range(y):
             print("#",end='')
         print("")
-        build(x-1)
+        
+        build(x-1, y + 1)
+        
 y = build(5)
 print(y)

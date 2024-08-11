@@ -11,7 +11,7 @@ class Announce():
     
     def cheaker(self):
        return self.capacity - len(self.passenger)
-   
+# self is to access somthing insidee the class 
     
 f = Announce(20)
 

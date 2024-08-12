@@ -3,5 +3,5 @@ airline = {
 'emirates': 20,
 'jet blue': 27
 }
-x = "EMirates".lower()
+x = "EMirates"
 print(airline.get(x, 'None'))

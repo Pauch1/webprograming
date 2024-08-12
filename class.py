@@ -1,5 +1,5 @@
 class Announce():
-    def __init__(self, capacity):
+    def __init__(self, capacity = 0):
         self.capacity = capacity
         self.passenger = []
     
@@ -13,7 +13,7 @@ class Announce():
        return self.capacity - len(self.passenger)
 # self is to access somthing insidee the class 
     
-f = Announce(20)
+f = Announce(3)
 
 names = ['john', 'sandra', 'kyle', 'lax', 'jewel']
 

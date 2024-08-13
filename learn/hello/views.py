@@ -3,7 +3,11 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return render(request, "index.html")
+    return render(request, 'index.html')
+
 
 def greet(request, name):
-    return HttpResponse(f"Hello, {name.capitalize()}")
+    
+    return render (request, 'greet.html',{
+        "name": name.capitalize()
+    })

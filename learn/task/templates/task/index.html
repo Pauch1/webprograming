@@ -1,0 +1,11 @@
+    {% block body%}
+    <ul>
+        <h1> TASKS: </h1>
+        {%for task in tasks%}
+            <li> {{task}} </li>
+        {%empty%}
+            <li> No Task</li>
+        {%endfor%}
+        <a href="{% url 'tasks:add' %}"> Add new Task</a>
+    </ul>
+    {% endblock  %}

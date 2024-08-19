@@ -10,7 +10,7 @@ def starting_page():
     elif choice == ' exit':
         return False
     else:
-        return None
+        pass
 
 def options_page():
     print("BOOK FLIGHT")
@@ -19,9 +19,21 @@ def options_page():
     
     choice = input("").lower()
     
-    if choice =='book flight':
+    if choice =='book' or '1':
         return 'book'
-    elif choice =='add airlines':
+    elif choice =='add' or '2':
         return 'add'
-    else:
-        return False
+    elif choice == 'exit' or '3':
+        return 'exit'
+    
+def password(user):
+    if user == 'tst123':
+        return True
+    
+def get_int(prompt):
+    while True:
+        try:
+            return int(input(prompt))
+        except ValueError:
+            pass
+    
